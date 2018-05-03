@@ -1,6 +1,7 @@
 // @flow
 
 // #region imports
+import 'babel-polyfill'; // NOTE: REALLY important to avoid "regeneratorRuntime is not defined"
 import React from 'react';
 import { hydrate, render } from 'react-dom';
 import injectTpEventPlugin from 'react-tap-event-plugin';
@@ -9,7 +10,6 @@ import { MuiThemeProvider } from 'material-ui/styles';
 import theme from './style/theme';
 import { AppContainer } from 'react-hot-loader';
 import Root from './Root';
-import 'babel-polyfill';
 // #endregion
 
 // #region smoothscroll polyfill
